@@ -1,0 +1,9 @@
+theme = "zarya"
+baseURL = "http://gabeamaya.com"
+languageCode = "en-us"
+title = "Gabe Amaya's Journal"
+MetaDataFormat = "toml"
+
+[permalinks]
+	page = "/:title/"
+	about = "/:filename/"
