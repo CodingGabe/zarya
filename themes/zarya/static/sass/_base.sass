@@ -5,19 +5,71 @@ $white: #fff
 $primary: #99EDCC
 $secondary: #4A4063
 $alt: #E87EA1
+$body-color: #424242
+$header-font: 'Roboto', sans-serif
+$body-font: 'Nunito', sans-serif
+$container: 60rem
 
 
 body
     background: rgb(74,64,99)
     background: $background
+    color: $body-color
+    background-size: auto
+    min-height: calc(100vh - 100px)
 h1,
 h2,
 h3,
 h4,
 h5 
-    font-family: 'Roboto', sans-serif
+    font-family: $header-font
 p
-    font-family: 'Nunito', sans-serif
+    font-family: $body-font
+a
+    font-family: $body-font
+    color: $secondary
+    text-decoration: none
+    font-weight: 600
+    &:focus,
+    &:hover
+        background-color: $alt
 footer 
     text-align: center
     color: $white
+    padding: 20px 0
+.container
+    background-color: $white
+    max-width: $container
+    padding: 2rem
+    margin: 0 auto
+    border-radius: 5px
+    box-shadow: 0px 3px 20px 2px rgba(0,0,0,0.5)
+.intro
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 60px 0
+    @media (max-width: 567px)
+        margin: 100px 0
+    h1
+        margin-bottom: 0
+    ul
+        list-style: none
+        padding: 0
+        li
+            display: inline
+            a
+                margin-right: 1rem
+                margin-left: 1rem
+    .intro-title
+        font-size: 5em
+        color: $white
+        text-shadow: 1px 2px 3px rgba(0, 0, 0, 1)
+        @media (max-width: 567px)
+            font-size: 2em
+    .intro-subtitle
+        font-size: 2em
+        margin-top: 5px
+        @media (max-width: 567px)
+            font-size: 1.5em
