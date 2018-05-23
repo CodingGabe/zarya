@@ -8,11 +8,13 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     </head>
-<body>
-    {{ partial "nav.html" . }}
-  <h1>{{ .Title }}</h1>
-  <h2>{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
-  {{ .Content }}
+<body class="post-body">
+    <div class="post-container">
+            {{ partial "nav.html" . }}
+            <h1>{{ .Title }}</h1>
+            <h2>{{ .Date.Format "Mon, Jan 2, 2006" }}</h2>
+            {{ .Content }}
+    </div>
 </body>
 {{ partial "footer.html" . }}
 </html>

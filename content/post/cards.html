@@ -1,0 +1,168 @@
+---
+title: "Cards"
+date: 2018-05-23T16:04:12-05:00
+draft: false
+---
+
+<style>
+    #success-box {
+        background: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #cbcdd3;
+        perspective: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px 20px;
+    }
+    #error-box {
+        background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+        border-radius: 20px;
+        box-shadow: 5px 5px 20px #cbcdd3;
+        perspective: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        width: 800px;
+        margin: 60px auto;
+    }
+    .dot {
+        width: 8px;
+        height: 8px;
+        background: #FCFCFC;
+        border-radius: 50%;
+        position: absolute;
+        top: 6%;
+        right: 6%;
+    }
+    .two {
+        right: 10%;
+        opacity: 0.5;
+    }
+    .face {
+        width: 50px;
+        height: 50px;
+        background: #e3e3e3;
+        border-radius: 50%;
+        border: 1px solid #777777;
+        animation: bounce 1s ease-in infinite;
+    }
+    .face2 {
+        width: 50px;
+        height: 50px;
+        background: #e3e3e3;
+        border-radius: 50%;
+        border: 1px solid #777777;
+        animation: roll 3s ease-in infinite;
+    }
+    .shadow {
+        width: 50px;
+        background: #777777;
+        opacity: 0.5;
+        border-radius: 50%;
+        height: 10px;
+    }
+    .message {
+        text-transform: uppercase;
+        line-height: 1.5;
+    }
+    .message h1 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        letter-spacing: 5px;
+        color: #fff;
+        font-weight: 700;
+    }
+    .message p {
+        font-size: 0.7em;
+        letter-spacing: 1px;
+        color: #5e5e5e;
+    }
+    .button-box {
+        background: #f7f7f7;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        box-shadow: 0px 1px 10px 2px rgba(0,0,0,0.3);
+        transition: all .5s ease-in-out;
+        padding: 5px 20px;
+    }
+    .button-box:hover {
+        transform: scale(1.03);
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+    }
+    .button-box h1 {
+        font-size: 0.7em;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    @keyframes bounce {
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    @keyframes roll {
+        0% {
+            transform: rotate(0deg);
+            left: 25%;
+        }
+        50% {
+            margin-left: 20px;
+        }
+        100% {
+            transform: rotate(360deg);
+            margin-left: 10px;
+        }
+    }
+</style>
+
+<div id="card-container">
+    <!-- Happy Box -->
+    <div id="success-box">
+        <div class="dot"></div>
+        <div class="dot two"></div>
+        <div class="face">
+            <div class="eye"></div>
+            <div class="eye right"></div>
+            <div class="mouth happy"></div>
+        </div>
+        <div class="shadow"></div>
+        <div class="message">
+            <h1 class="alert">Success!</h1>
+            <p>yay, everything is working.</p>
+        </div>
+        <button class="button-box">
+            <h1 class="green">continue</h1>
+        </button>
+    </div>
+    <!-- Sad Box -->
+    <div id="error-box">
+        <div class="dot"></div>
+        <div class="dot two"></div>
+        <div class="face2">
+            <div class="eye"></div>
+            <div class="eye right"></div>
+            <div class="mouth sad"></div>
+        </div>
+        <div class="shadow"></div>
+        <div class="message">
+            <h1 class="alert">Error!</h1>
+            <p>oh no, something went wrong.</div>
+        <button class="button-box">
+            <h1 class="red">try again</h1>
+        </button>
+    </div>
+</div>
