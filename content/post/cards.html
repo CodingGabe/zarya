@@ -7,6 +7,17 @@ draft: false
 <style>
     #success-box {
         background: linear-gradient( 135deg, #81FBB8 10%, #28C76F 100%);
+    }
+    #error-box {
+        background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
+    }
+    #cat-box {
+        background-image: linear-gradient( 135deg, #EE9AE5 10%, #5961F9 100%);
+    }
+    .cat-text {
+        color: #5961F9;
+    }
+    .card-box {
         border-radius: 20px;
         box-shadow: 5px 5px 20px #cbcdd3;
         perspective: 40px;
@@ -17,18 +28,6 @@ draft: false
         align-items: center;
         text-align: center;
         padding: 40px 20px;
-    }
-    #error-box {
-        background-image: linear-gradient( 135deg, #FF9D6C 10%, #BB4E75 100%);
-        border-radius: 20px;
-        box-shadow: 5px 5px 20px #cbcdd3;
-        perspective: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        text-align: center;
     }
     #card-container {
         display: grid;
@@ -65,6 +64,11 @@ draft: false
         border-radius: 50%;
         border: 1px solid #777777;
         animation: roll 3s ease-in infinite;
+        position: relative;
+    }
+    .face3 {
+        animation: bounce 3s ease-in infinite;
+        position: relative;
     }
     .shadow {
         width: 50px;
@@ -117,21 +121,21 @@ draft: false
     @keyframes roll {
         0% {
             transform: rotate(0deg);
-            left: 25%;
+            left: -15%;
         }
         50% {
-            margin-left: 20px;
+            left: 15%;
         }
         100% {
             transform: rotate(360deg);
-            margin-left: 10px;
+            left: -15%;
         }
     }
 </style>
 
 <div id="card-container">
     <!-- Happy Box -->
-    <div id="success-box">
+    <div id="success-box" class="card-box">
         <div class="dot"></div>
         <div class="dot two"></div>
         <div class="face">
@@ -149,7 +153,7 @@ draft: false
         </button>
     </div>
     <!-- Sad Box -->
-    <div id="error-box">
+    <div id="error-box" class="card-box">
         <div class="dot"></div>
         <div class="dot two"></div>
         <div class="face2">
@@ -160,9 +164,26 @@ draft: false
         <div class="shadow"></div>
         <div class="message">
             <h1 class="alert">Error!</h1>
-            <p>oh no, something went wrong.</div>
+            <p>oh no, something went wrong.</p>
+        </div>
         <button class="button-box">
             <h1 class="red">try again</h1>
         </button>
     </div>
+    <!-- Kitty Box -->
+    <div id="cat-box" class="card-box">
+            <div class="dot"></div>
+            <div class="dot two"></div>
+            <div class="face3">
+                <img src="/img/Gengar2.png" alt="gengar">
+            </div>
+            <div class="shadow"></div>
+            <div class="message">
+                <h1 class="alert">Meow Time</h1>
+                <p>Time for all of the Meow's</p>
+            </div>
+            <button class="button-box">
+                <h1 class="cat-text">Click to Pet</h1>
+            </button>
+        </div>
 </div>
