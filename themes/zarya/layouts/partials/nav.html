@@ -1,3 +1,7 @@
+<div class="nav-logo">
+    <a class="logo-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+</div>
+
 <div class="button_container" id="toggle-navvy">
     <span class="top"></span>
     <span class="middle"></span>
@@ -6,20 +10,14 @@
 
 <div class="overlay" id="overlay">
     <nav class="overlay-menu">
+        {{ with .Site.Menus.main }}
         <ul>
+            {{ range sort . }}
             <li>
-                <i data-feather="home"></i>
-                <a href="/index.html">Home</a>
+                <a href="{{ .URL }}">{{ .Name }}</a>
             </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Journal</a>
-            </li>
-            <li>
-                <a href="#">Work</a>
-            </li>
+            {{ end }}
         </ul>
+        {{ end }}
     </nav>
 </div>
