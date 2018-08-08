@@ -40,8 +40,10 @@ a
         background-color: $alt
 footer 
     text-align: center
-    color: $secondary
+    color: $white
     padding: 20px 0
+    background-color: $secondary
+    
 .container
     max-width: $container
     padding: 0 2em 
@@ -52,7 +54,7 @@ footer
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
     // background: linear-gradient(53deg, rgba(74,64,99,1) 0%, rgba(153,237,204,1) 100%)
-    background: linear-gradient(53deg, rgba(26,200,252,1) 0%, rgba(148,253,160,1) 100%)
+    background-color: $primary
 .intro
     background: $background, url(/img/angle.png) no-repeat center center
     background-size: cover
@@ -139,6 +141,25 @@ footer
         font-size: 1.2em
         color: $white
 
+// skills
+
+.design
+    display: flex
+    flex-direction: row
+    flex-basis: 100%
+    .design-img
+        display: flex
+        flex: 5
+        text-align: center
+        justify-content: center
+        align-items: center
+        align-content: center
+        i
+            font-size: 5em
+    .design-desc
+        flex: 5
+.available
+    margin: 20px 0 60px 0
 @font-face 
     font-family: zarya 
     src: url(fonts/againts.otf) format('opentype')
