@@ -5,7 +5,7 @@ name = "Zarya"
 license = "MIT"
 licenselink = "https://github.com/CodingGabe/zarya/blob/master/LICENSE.md"
 description = "My new Hugo theme created with CSS Grid"
-tags = [css-grid, journal, blog, simple]
+tags = ["css-grid, journal, blog, simple"]
 features = []
 min_version = "0.38.2"
 

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Posts</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<body class="post-body">
+    <div class="post-container">
+        <div class="nav-logo">
+    <a class="logo-title" href="http://gabeamaya.com">Gabe Amaya&#39;s Journal</a>
+</div>
+
+<div class="button_container" id="toggle-navvy">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+</div>
+
+<div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+        
+        <ul>
+            
+            <li>
+                <a href="/post/">Journal</a>
+            </li>
+            
+        </ul>
+        
+    </nav>
+</div>
+        <h1>posts</h1>
+         
+        <h2>
+            <a href="http://gabeamaya.com/post/cards/">Cards</a>
+        </h2>
+          
+        <h2>
+            <a href="http://gabeamaya.com/post/console-wars-2018/">Console Wars 2018</a>
+        </h2>
+          
+        <h2>
+            <a href="http://gabeamaya.com/post/second/">Second</a>
+        </h2>
+          
+        <h2>
+            <a href="http://gabeamaya.com/post/first/">First</a>
+        </h2>
+         
+
+        
+    </div>
+</body>
+<footer class="footer">
+    <p>© 2018 · Powered by Zarya</p>
+    <p>Custom theme by <a href="www.gabeamaya.com">Gabe Amaya</a></p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  $('#toggle-navvy').click(function() {
+   $(this).toggleClass('active');
+   $('#overlay').toggleClass('open');
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+
+</html>
