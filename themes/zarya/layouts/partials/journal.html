@@ -1,0 +1,10 @@
+<section id="journal">
+    <div class="container">
+        {{ range first 5 .Data.Pages }} {{ if eq .Type "journal"}}
+        <h2>
+            <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        <p>{{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read</p>
+        {{ end }} {{ end }}
+    </div>
+</section>
