@@ -1,3 +1,6 @@
+languageCode = "en-us"
+MetaDataFormat = "toml"
+
 [build]
 publish = "public"
 command = "hugo"
