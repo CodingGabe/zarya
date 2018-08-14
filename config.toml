@@ -37,4 +37,4 @@ MetaDataFormat = "toml"
 [[menu.main]]
     name = "Journal"
     weight = 2
-    url = "/post/"
+    url = "/journal/"
