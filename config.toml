@@ -16,7 +16,9 @@ MetaDataFormat = "toml"
     
 # Social links
 [[params.social]]
-    name = "Github"
+    icon = "github"
+    icon_pack = "fa"
+    name = "GitHub"
     weight = 1
     url = "https://github.com/CodingGabe/"
 [[params.social]]

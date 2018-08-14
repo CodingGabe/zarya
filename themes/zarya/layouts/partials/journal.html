@@ -1,5 +1,5 @@
 <section id="journal">
-    <div class="container">
+    <div class="journal-container">
         {{ range first 5 .Data.Pages }} {{ if eq .Type "journal"}}
         <h2>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
