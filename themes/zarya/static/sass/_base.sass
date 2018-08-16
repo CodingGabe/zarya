@@ -36,13 +36,19 @@ a
 footer 
     text-align: center
     color: $alt
-    padding: 20px 0
+    padding: 40px 0
     // background-color: $secondary
     background: $secondary url(/img/brush-background.png) no-repeat center center
     background-size: cover
+    #footer-wrapper
+        border: 2px solid $alt
+        display: inline-block
+        padding: 5px 10px
+        border-radius: 5px
     p
-        border-color: $alt
-        color: $alt
+        letter-spacing: 2px
+        color: $white
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
     a
         color: $white
     
@@ -57,6 +63,9 @@ footer
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%)
     // background: linear-gradient(53deg, rgba(74,64,99,1) 0%, rgba(153,237,204,1) 100%)
     background-color: $primary
+    @media (max-width: 567px)
+        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
 .intro
     background: $background, url(/img/angle.png) no-repeat center center
     background-size: cover
@@ -127,6 +136,7 @@ footer
     text-align: center
     padding: 40px 0
     margin-top: -7px
+    text-shadow: 0 1px 3px rgba(36,180,126,.4)
     h2
         font-weight: 700
         text-transform: uppercase
@@ -153,9 +163,9 @@ footer
 // skills
 
 .design
-    display: flex
-    flex-direction: row
-    flex-basis: 100%
+    display: grid
+    grid-gap: 40px
+    grid-template-columns: 1fr 1fr
     .design-img
         display: flex
         flex: 5
@@ -164,7 +174,13 @@ footer
         align-items: center
         align-content: center
         i
-            font-size: 5em
+            font-size: 3em
+            color: $primary
+    .icon-wrapper
+        background-color: $secondary
+        padding: 20px
+        border-radius: 50%
+        box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.2)
     .design-desc
         flex: 5
 .available
@@ -184,9 +200,10 @@ footer
 // Journal 
 #journal
     padding: 40px 0
+    background-color: #FAFAFA
 .journal-container
     max-width: 600px
-    margin: 0 auto;
+    margin: 0 auto
     padding-right: 20px
     padding-left: 20px
     p

@@ -16,21 +16,24 @@
         color: #ff5252
 
 .zarya-btn
-    padding: 0.5em 1.5em
+    padding: 10px 20px
     color: $white
     background-color: $secondary
     text-transform: uppercase
-    border-radius: 0.5em
-    font-size: 1em
-    letter-spacing: 0.05em
+    text-shadow: 0 1px 3px rgba(36,180,126,.4)
+    border-radius: 5px
+    font-weight: 600
+    font-size: 15px
+    letter-spacing: 0.025em
     box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
     transition: all .15s ease
     &:hover
+        transform: translateY(-1px)
         background-color: $secondary
-        transform: translateY(-2px) !important
-        box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08)
+        box-shadow: 0 7px 14px rgba(50,50,93,.2)
+        opacity: 0.95
 .button-wrapper
-    padding-top: 2em
+    padding-top: 20px 
     i
         padding-right: 0.5em
 .zarya-title
@@ -52,3 +55,13 @@
     letter-spacing: 5px
     line-height: 1.2
     text-shadow: 0px 2px 10px rgba(255, 255, 255, 0.5)
+
+.cursor
+    -webkit-animation: 1s blink step-end infinite
+    animation: 1s blink step-end infinite
+@keyframes blink
+    0%, 100%
+        color: transparent
+    50%
+        color: $body-color
+    

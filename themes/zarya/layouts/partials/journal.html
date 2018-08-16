@@ -2,10 +2,10 @@
     <div class="journal-container">
         <h1 class="savage-title">Latest Posts</h1>
         {{ range first 5 .Data.Pages }} {{ if eq .Type "journal"}}
-        <h2>
-            <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </h2>
-        <p>{{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read</p>
+        <div class="journal-post">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <p>{{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read</p>
+        </div>
         {{ end }} {{ end }}
     </div>
 </section>
