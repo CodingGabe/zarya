@@ -17,7 +17,7 @@ Current version: [v1.0](https://github.com/CodingGabe/zarya)
 * ⚡️ Blazing fast
 * ✉️ Just simple
 * ✏️ Super clean
-* 🖍 Moder Design
+* 🖍 Modern Design
 
 ## Installation
 
