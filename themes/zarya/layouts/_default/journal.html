@@ -23,7 +23,7 @@
         <h2>
             <a href="{{ .Permalink }}">{{ .Title }}</a>
         </h2>
-        <p>{{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read</p>
+        <p class="post-date">{{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read</p>
         {{ end }} {{ end }}
 
         <!-- <h1>{{ .Title }}</h1>
