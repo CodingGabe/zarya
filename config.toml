@@ -24,7 +24,7 @@ MetaDataFormat = "toml"
 [[params.social]]
     name = "Twitter"
     weight = 2
-    url = "https://twitter.com/King_Gabe/"
+    url = "https://twitter.com/King_Gabes/"
 [[params.social]]
     name = "LinkedIn"
     weight = 3
