@@ -21,7 +21,9 @@
         <h2 class="zarya-title">{{ .Title }}</h2>
     </div>
     <div class="post-container">
-        {{.Content}}
+        <div class="journal-container">
+            {{.Content}}
+        </div>
     </div>
     {{ partial "footer.html" . }}
 </body>
