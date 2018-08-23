@@ -40,3 +40,7 @@ MetaDataFormat = "toml"
     name = "Journal"
     weight = 2
     url = "/journal/"
+[[menu.main]]
+    name = "Resume"
+    weight = 3
+    url = "/resume/"
