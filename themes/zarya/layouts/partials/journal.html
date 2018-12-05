@@ -1,11 +1,12 @@
 <section id="journal">
     <div class="journal-container">
         <h1 class="savage-title">Latest Posts</h1>
-        {{ range first 5 .Data.Pages }} {{ if eq .Type "journal"}}
+        {{ range first 3 .Data.Pages }} {{ if eq .Type "journal"}}
         <div class="journal-post">
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <p class="post-date">{{ .Date.Format (.Site.Params.dateform | default "January 2, 2006") }} · {{ .ReadingTime }} minute read</p>
         </div>
         {{ end }} {{ end }}
+        <p style="text-align:center"><a href="/journal/">View All</a></p>
     </div>
 </section>
