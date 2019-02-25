@@ -12,39 +12,49 @@
 .not-available
     text-align: center
     font-size: 1.5em
-    strong
-        color: #ff5252
+    color: #ff5252
+.section-title 
+    font-size: 7.6rem
+    font-family: futura-pt, sans-serif
+    font-style: normal
+    font-weight: 700
+    margin: 0
+    font-style: italic
 
-.zarya-btn
-    padding: 10px 20px
+.zarya-btn:link,
+.zarya-btn:active
+    display: inline-block
+    font-family: futura-pt, sans-serif
+    font-style: italic
+    max-width: 15rem
+    text-align: center
+    padding: 1rem 2rem
     color: $white
-    background-color: $secondary
+    background-color: $primary
     text-transform: uppercase
     text-shadow: 0 1px 3px rgba(36,180,126,.4)
     border-radius: 5px
-    font-weight: 600
-    font-size: 15px
-    letter-spacing: 0.025em
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08)
-    transition: all .15s ease
+    font-weight: 700
+    letter-spacing: 0.1rem
+    font-size: 1.8rem
+    box-shadow: 0 2px 2px rgba(0,0,0,.24)
+    transition: all .2s ease-in-out
     &:hover
         transform: translateY(-1px)
-        background-color: $secondary
-        box-shadow: 0 7px 14px rgba(50,50,93,.2)
+        background-color: $primary
+        box-shadow: 0 8px 8px rgba(0,0,0,.16)
         opacity: 0.95
 .button-wrapper
     padding-top: 20px 
     i
         padding-right: 0.5em
 .zarya-title
-    font-family: zarya
     font-size: 4em
     color: $white
     margin: 0
     letter-spacing: 5px
     line-height: 1.2
     text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5)
-    text-align: center
     @media (max-width: 567px)
         font-size: 2em
         text-align: center
@@ -66,5 +76,5 @@ p.post-date
     0%, 100%
         color: transparent
     50%
-        color: $body-color
+        color: $white
     

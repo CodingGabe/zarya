@@ -1,0 +1,21 @@
+// About section 
+
+.about-grid
+    display: grid
+    grid-template-columns: 1fr 1fr
+    .about--desc
+        padding: 6rem
+        background-color: #FAFAFA
+        display: flex
+        flex-direction: column
+        justify-content: center
+    img
+        width: 100%
+    @media (max-width: 600px)
+        grid-template-columns: 1fr
+.about
+    margin: 6rem 0
+    @media (max-width: 600px)
+        margin: 4rem 0
+        padding-top: 0
+        

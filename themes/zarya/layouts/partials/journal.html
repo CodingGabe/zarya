@@ -1,6 +1,6 @@
 <section id="journal">
     <div class="journal-container">
-        <h1 class="savage-title">Latest Posts</h1>
+        <h1 class="section-title">latest posts</h1>
         {{ range first 3 .Data.Pages }} {{ if eq .Type "journal"}}
         <div class="journal-post">
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>

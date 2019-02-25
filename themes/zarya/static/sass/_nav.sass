@@ -15,18 +15,20 @@
   &.active 
     .top 
       transform: translateY(11px) translateX(0) rotate(45deg)
-      background: $secondary
+      background: $white
 
     .middle 
       opacity: 0
-      background: $secondary
+      background: $white
     
     .bottom 
       transform: translateY(-11px) translateX(0) rotate(-45deg)
-      background: $secondary
+      background: $white
+      width: 35px
+      left: 0
   
   span 
-    background: $secondary
+    background: $white
     border: none
     height: 5px
     width: 100%
@@ -47,6 +49,8 @@ span
     
     &:nth-of-type(3) 
       top: 22px
+      left: 15px
+      width: 20px
 
 .overlay 
   position: fixed

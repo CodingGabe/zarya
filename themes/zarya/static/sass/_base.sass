@@ -1,23 +1,24 @@
 /* Base styles */
     
-$background: linear-gradient(53deg, rgba(74,64,99,0.7) 0%, rgba(153,237,204,0.7) 100%)
+$background: linear-gradient(180deg, rgba(125,13,70,0.67) 0%, rgba(250,25,139,0.67) 100%)
 $white: #fff
-$primary: #99EDCC
-$secondary: #4A4063
-$alt: #FC7A57
+$primary: #FA198B
+$secondary: #000
+$alt: #14B6CC
 $body-color: #424242
-$header-font: 'Chivo', sans-serif
-$body-font: 'Inconsolata', monospace
-$container: 60rem
+$header-font: proxima-nova, sans-serif
+$body-font: futura-pt, sans-serif
+$container: 90rem
 
 html
     overflow-x: hidden
+    font-size: 10px
     
 body
     background-color: $white
     color: $body-color
     background-size: auto
-    min-height: 100vh
+    // min-height: 100vh
     line-height: 1.5
 h1,
 h2,
@@ -27,7 +28,7 @@ h5
     font-family: $header-font
 p
     font-family: $body-font
-    font-size: 1.1em
+    font-size: 2rem
 a
     font-family: $body-font
     color: $secondary
@@ -39,16 +40,9 @@ a
         background-color: $alt
 footer 
     text-align: center
-    color: $alt
-    padding: 40px 0
-    // background-color: $secondary
-    background: $secondary url(/img/brush-background.png) no-repeat center center
-    background-size: cover
-    #footer-wrapper
-        border: 2px solid $alt
-        display: inline-block
-        padding: 5px 10px
-        border-radius: 5px
+    color: $white
+    padding: 4rem 0
+    background-color: #222
     p
         letter-spacing: 2px
         color: $white
@@ -56,28 +50,26 @@ footer
     a
         color: $white
     
-.container
-    max-width: $container
-    padding: 0 2em 
-    margin: 0 auto
-    // border-radius: 5px
-    // box-shadow: 0px 3px 20px 2px rgba(0,0,0,0.5)
 .clippy
     -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%)
     clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%)
     // background: linear-gradient(53deg, rgba(74,64,99,1) 0%, rgba(153,237,204,1) 100%)
-    background-color: $primary
+    background-color: $secondary
     @media (max-width: 567px)
         -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
         clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
 .intro
     background: $background, url(/img/angle.png) no-repeat center center
     background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    padding: 4rem 0
+    box-shadow: 0 10px 50px rgba(0,0,0,.6)
+    height: 90vh
     display: flex
     flex-direction: column
     justify-content: center
-    align-items: center
-    padding: 80px 0
     @media (max-width: 567px)
         padding:  100px 0
     h1
@@ -93,18 +85,19 @@ footer
                 color: $white
                 font-size: 1em
                 letter-spacing: 2px
-    .intro-title
-        font-size: 5em
+    .intro--header
+        font-family: zarya
+        font-size: 10.9rem
         color: $white
         text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5)
-        margin-bottom: 2px
+        margin-bottom: 2rem
         line-height: 1.2
         @media (max-width: 567px)
             font-size: 2em
-    .intro-subtitle
-        font-size: 4.5em
+    .intro--subheader
+        font-size: 6rem
         margin-top: 0
-        font-family: zarya
+        margin-bottom: 3rem
         letter-spacing: 5.5px
         font-weight: 100
         color: $white
@@ -113,24 +106,6 @@ footer
         @media (max-width: 567px)
             font-size: 1.5em
             
-// About section 
-
-.about-grid
-    display: grid
-    grid-template-columns: 1fr 400px
-    align-items: center
-    grid-gap: 20px
-    h2
-        font-weight: 700
-    img
-        width: 100%
-    @media (max-width: 567px)
-        grid-template-columns: 1fr
-.about
-    padding-top: 40px
-    @media (max-width: 567px)
-        margin-top: 40px
-        padding-top: 0
 // message 
 
 .message-title 
@@ -166,32 +141,34 @@ footer
 
 // skills
 
-.design
-    display: grid
-    grid-gap: 40px
-    grid-template-columns: 1fr 1fr
-    .design-img
-        display: flex
-        flex: 5
+#skills
+    .section-title
         text-align: center
-        justify-content: center
-        align-items: center
-        align-content: center
-        i
-            font-size: 3em
-            color: $primary
-    .icon-wrapper
-        background-color: $secondary
-        padding: 20px
-        border-radius: 50%
-        box-shadow: 0 7px 14px rgba(50,50,93,0.1), 0 3px 6px rgba(0,0,0,0.2)
-    .design-desc
-        flex: 5
-.available
-    margin: 20px 0
-.design-wrapper
-    max-width: 800px
-    margin: 0 auto
+        color: $white
+        span
+            color: $white
+    margin: 10rem 0
+    background: rgb(75,7,42)
+    background: linear-gradient(90deg, rgba(75,7,42,1) 0%, rgba(250,25,139,1) 50%)
+    transform: skewY(-5deg)
+    padding: 6rem 0
+    
+    .skills--card_container
+        display: grid
+        max-width: 140rem
+        grid-template-columns: 1fr 1fr 1fr
+        grid-gap: 4rem
+        margin: 2rem auto
+        .skills--card
+            box-shadow: 0 2px 15px rgba(0,0,0,.10)
+            padding: 4rem
+            text-align: center
+            border-radius: 2.5rem
+            background-color: $white
+    .skills--title
+        font-size: 4rem
+        font-weight: 700
+
 
 // Hire me
 
@@ -203,10 +180,13 @@ footer
     text-align: center
 // Journal 
 #journal
-    padding: 40px 0
+    padding: 4rem 0
     background-color: #FAFAFA
+    .section-title
+        text-align: center
+        margin-bottom: 2rem
 .journal-container
-    max-width: 600px
+    max-width: 60rem
     margin: 0 auto
     padding-right: 20px
     padding-left: 20px
@@ -236,4 +216,4 @@ footer
 
 @font-face 
     font-family: zarya 
-    src: url(fonts/painterz.ttf) format('opentype')
+    src: url(fonts/graffiti.otf) format('opentype')

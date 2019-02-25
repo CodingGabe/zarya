@@ -23,15 +23,25 @@
 </div>
 
 <section class="intro">
-    <h1 class="intro-title">{{ .Site.Params.author }}</h1>
-    <h2 class="zarya-title">Front End Web Developer</h2>
-    {{ with .Site.Params.social }}
-    <ul>
-        {{ range sort .}}
-        <li>
-            <a href="{{ .url }}">{{ .name }}</a>
-        </li>
-        {{ end }}
-    </ul>
-    {{ end }}
+    <div class="grid-container">
+        <div class="intro--titles">
+            <h1 class="intro--header">{{ .Site.Params.author }}</h1>
+            <h2 class="intro--subheader">Front End Web Developer</h2>
+            <a href="#about" class="zarya-btn">Check me out</a>
+            <!-- {{ with .Site.Params.social }}
+            <ul>
+                {{ range sort .}}
+                <li>
+                    <a href="{{ .url }}">{{ .name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+            {{ end }} -->
+        </div>
+        <div class="intro--social">
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+        </div>
+    </div>
 </section>
