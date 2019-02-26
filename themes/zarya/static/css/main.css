@@ -61,7 +61,6 @@ footer {
 .intro {
   background: linear-gradient(180deg, rgba(125, 13, 70, 0.67) 0%, rgba(250, 25, 139, 0.67) 100%), url(/img/angle.png) no-repeat center center;
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   padding: 4rem 0;
