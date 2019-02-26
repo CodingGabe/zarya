@@ -11,13 +11,19 @@
     max-width: 120rem
     margin: 0 auto
     grid-template-columns: 3fr 1fr
+    @media (max-width: 600px)
+        grid-template-columns: 1fr
+        text-align: center
     .intro--social
         display: flex
         flex-direction: column
         justify-content: center
         align-items: flex-end
-        i
+        @media (max-width: 600px)
+            flex-direction: row
+            align-items: baseline
+            justify-content: space-evenly
+            margin-top: 2.5rem
+        a
             font-size: 3.4rem
             color: $white
-        i:not(:last-child)
-            margin-bottom: 1.5rem
