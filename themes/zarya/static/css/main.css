@@ -154,13 +154,13 @@ footer {
     max-width: 140rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
-    margin: 2rem auto; }
-    #skills .skills--card_container .skills--card {
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-      padding: 4rem;
-      text-align: center;
-      border-radius: 2.5rem;
-      background-color: #fff; }
+    margin: 2rem auto;
+    padding: 0 2rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 4rem;
+    text-align: center;
+    border-radius: 2.5rem;
+    background-color: #fff; }
   #skills .skills--title {
     font-size: 4rem;
     font-weight: 700; }

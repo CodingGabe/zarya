@@ -1,20 +1,22 @@
 {
   "name": "zarya",
   "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "second version of my site son",
+  "main": "gulpfile.js",
   "scripts": {
     "compile": "node-sass themes/zarya/static/sass/main.sass themes/zarya/static/css/main.css -w"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodingGabe/zarya.git"
+  },
+  "author": "Gabe Amaya",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodingGabe/zarya/issues"
+  },
+  "homepage": "https://github.com/CodingGabe/zarya#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.11.0"
   }
 }
