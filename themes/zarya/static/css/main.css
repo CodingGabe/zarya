@@ -69,6 +69,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+  @media (max-width: 600px) {
+    .intro {
+      background-position: center; } }
   .intro h1 {
     margin-bottom: 0; }
   .intro ul {
