@@ -48,16 +48,11 @@ footer {
     color: #fff;
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5); }
   footer a {
-    color: #fff; }
-
-.clippy {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
-  clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%);
-  background-color: #000; }
-  @media (max-width: 567px) {
-    .clippy {
-      -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
-      clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%); } }
+    color: #fff;
+    margin: 0 .5rem; }
+    footer a:hover {
+      background-color: transparent;
+      opacity: 0.4; }
 
 .intro {
   background: linear-gradient(180deg, rgba(125, 13, 70, 0.67) 0%, rgba(250, 25, 139, 0.67) 100%), url(/img/angle.png) no-repeat center center;
@@ -582,3 +577,6 @@ p.post-date {
     .grid-container .intro--social a {
       font-size: 3.4rem;
       color: #fff; }
+      .grid-container .intro--social a:hover {
+        background-color: transparent;
+        opacity: 0.4; }

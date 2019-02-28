@@ -50,15 +50,11 @@ footer
         text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5)
     a
         color: $white
-    
-.clippy
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%)
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0% 100%)
-    // background: linear-gradient(53deg, rgba(74,64,99,1) 0%, rgba(153,237,204,1) 100%)
-    background-color: $secondary
-    @media (max-width: 567px)
-        -webkit-clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
-        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%)
+        margin: 0 .5rem
+        &:hover
+            background-color: transparent
+            opacity: 0.4
+
 .intro
     background: $background, url(/img/angle.png) no-repeat center center
     background-size: cover
