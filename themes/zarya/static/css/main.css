@@ -71,7 +71,8 @@ footer {
   justify-content: center; }
   @media (max-width: 600px) {
     .intro {
-      background-position: center; } }
+      background-position: center;
+      background-attachment: scroll; } }
   .intro h1 {
     margin-bottom: 0; }
   .intro ul {
@@ -230,7 +231,7 @@ footer {
   .about-grid img {
     width: 100%;
     height: 100%; }
-  @media (max-width: 600px) {
+  @media (max-width: 1095px) {
     .about-grid {
       grid-template-columns: 1fr; } }
 
@@ -555,13 +556,16 @@ p.post-date {
 
 .grid-container {
   display: grid;
+  padding: 6rem;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
   max-width: 120rem;
-  margin: 0 auto;
-  grid-template-columns: 3fr 1fr; }
+  margin: 0 auto; }
   @media (max-width: 600px) {
     .grid-container {
       grid-template-columns: 1fr;
-      text-align: center; } }
+      text-align: center;
+      padding: 2rem; } }
   .grid-container .intro--social {
     display: flex;
     flex-direction: column;

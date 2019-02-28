@@ -8,12 +8,15 @@
     
 .grid-container
     display: grid
+    padding: 6rem
+    grid-template-columns: 3fr 1fr
+    align-items: center
     max-width: 120rem
     margin: 0 auto
-    grid-template-columns: 3fr 1fr
     @media (max-width: 600px)
         grid-template-columns: 1fr
         text-align: center
+        padding: 2rem
     .intro--social
         display: flex
         flex-direction: column
