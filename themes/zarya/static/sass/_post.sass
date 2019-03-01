@@ -1,7 +1,6 @@
 // All Blog post Styles 
 .post-body
     background: #fff !important
-    font-size: 1.1em
     line-height: 1.8
     display: grid
     min-height: 100vh
@@ -14,16 +13,23 @@
     h1
         text-align: center
     h2
-        font-size: 3em
+        font-size: 4rem
         margin-bottom: 10px
         line-height: 1
+        text-transform: lowercase
+        @media (max-width: 600px)
+            font-size: 3.4rem
     .post-date
         color: #bdc3c7
+        @media (max-width: 600px)
+            font-size: 1.6rem
 .journal-container
-    max-width: 800px
-    margin: 4em auto
-    p 
-        color: $body-color
+    max-width: 65rem
+    margin: 6rem auto
+    padding: 0 2rem
+    h1
+        font-size: 3rem
+
 .journal-post
     padding: 20px
     background-color: $white
@@ -39,4 +45,4 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    padding: 80px 0
+    padding: 10rem 0
