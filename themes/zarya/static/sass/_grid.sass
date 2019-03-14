@@ -33,3 +33,17 @@
             &:hover
                 background-color: transparent
                 opacity: 0.4
+
+.zarya-grid
+    display: grid
+    grid-gap: 3rem
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr))
+    .grid-item
+        background-color: $secondary
+        color: $white
+        border-radius: .5rem
+        .playlist-desc
+            padding: 2rem
+        img
+            width: 100%
+            border-radius: .5rem .5rem 0 0

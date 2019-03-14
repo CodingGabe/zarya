@@ -386,8 +386,9 @@ span:nth-of-type(3) {
   grid-template-rows: auto 1fr auto; }
 
 .post-container {
-  width: 100%;
-  justify-self: center; }
+  justify-self: center;
+  margin: 6rem 0;
+  padding: 0 2rem; }
   .post-container h1 {
     text-align: center; }
   .post-container h2 {
@@ -557,3 +558,17 @@ p.post-date {
       .grid-container .intro--social a:hover {
         background-color: transparent;
         opacity: 0.4; }
+
+.zarya-grid {
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+  .zarya-grid .grid-item {
+    background-color: #000;
+    color: #fff;
+    border-radius: .5rem; }
+    .zarya-grid .grid-item .playlist-desc {
+      padding: 2rem; }
+    .zarya-grid .grid-item img {
+      width: 100%;
+      border-radius: .5rem .5rem 0 0; }

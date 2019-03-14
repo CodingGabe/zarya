@@ -9,6 +9,10 @@
         <link href="https://fonts.googleapis.com/css?family=Chivo|Overpass" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/img/favicon/site.webmanifest">
         <!-- Font Awesome 5 Icons-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <!-- GitHub js -->
@@ -21,9 +25,7 @@
         <h2 class="zarya-title">{{ .Title }}</h2>
     </div>
     <div class="post-container">
-        <div class="journal-container">
-            {{.Content}}
-        </div>
+        {{.Content}}
     </div>
     {{ partial "footer.html" . }}
 </body>
