@@ -389,11 +389,16 @@ span:nth-of-type(3) {
   justify-self: center;
   margin: 6rem auto;
   padding: 0 2rem;
-  max-width: 100rem; }
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
   .post-container h1 {
     text-align: center;
     font-size: 7.6rem;
-    font-family: futura-pt, sans-serif; }
+    font-family: futura-pt, sans-serif;
+    line-height: 1; }
   .post-container h2 {
     font-size: 4rem;
     margin-bottom: 10px;
@@ -402,6 +407,9 @@ span:nth-of-type(3) {
     @media (max-width: 600px) {
       .post-container h2 {
         font-size: 3.4rem; } }
+  .post-container img {
+    text-align: center;
+    margin: 0 auto; }
   .post-container .post-date {
     color: #bdc3c7; }
     @media (max-width: 600px) {
