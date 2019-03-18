@@ -521,6 +521,9 @@ span:nth-of-type(3) {
 p.post-date {
   color: #bdc3c7; }
 
+.playlist-title {
+  font-size: 2rem; }
+
 @keyframes blink {
   0%, 100% {
     color: transparent; }
