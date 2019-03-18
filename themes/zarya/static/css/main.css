@@ -388,9 +388,12 @@ span:nth-of-type(3) {
 .post-container {
   justify-self: center;
   margin: 6rem 0;
-  padding: 0 2rem; }
+  padding: 0 2rem;
+  max-width: 90rem; }
   .post-container h1 {
-    text-align: center; }
+    text-align: center;
+    font-size: 7.6rem;
+    font-family: futura-pt, sans-serif; }
   .post-container h2 {
     font-size: 4rem;
     margin-bottom: 10px;
