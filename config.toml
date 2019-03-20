@@ -48,3 +48,7 @@ MetaDataFormat = "toml"
     name = "Playlists"
     weight = 4
     url = "/playlists/"
+[[menu.main]]
+    name = "About"
+    weight = 5
+    url = "/about/"
