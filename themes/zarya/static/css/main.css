@@ -214,7 +214,8 @@ footer {
   max-width: 40rem;
   border-radius: 50%;
   margin: 0 auto 2rem auto;
-  display: flex; }
+  display: flex;
+  width: 100%; }
 
 .button_container {
   position: fixed;
@@ -579,6 +580,10 @@ p.post-date {
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+  @media (max-width: 600px) {
+    .zarya-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      padding: 0 2rem; } }
   .zarya-grid .grid-item {
     background-color: #000;
     color: #fff;
