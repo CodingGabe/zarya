@@ -163,7 +163,8 @@ footer {
     margin-bottom: 2rem; }
 
 .resume {
-  background-color: #34495e; }
+  background: #43bfe6;
+  background: linear-gradient(180deg, #43bfe6 0%, #226277 80%); }
 
 .resume-wrapper {
   max-width: 800px;
