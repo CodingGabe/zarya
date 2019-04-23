@@ -420,6 +420,11 @@ span:nth-of-type(3) {
     @media (max-width: 600px) {
       .post-container .post-date {
         font-size: 1.6rem; } }
+  @media (max-width: 600px) {
+    .post-container img {
+      width: 100%; }
+    .post-container h1 {
+      font-size: 4rem; } }
 
 .journal-container {
   max-width: 65rem;
