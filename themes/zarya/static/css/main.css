@@ -7,6 +7,10 @@ ol {
   padding: 0; }
 
 /* Base styles */
+@root : {
+  --dark: rgb(30,34,39);
+  --light: #fff; }
+
 html {
   overflow-x: hidden;
   font-size: 10px;
@@ -104,15 +108,6 @@ footer {
       .intro .intro--subheader {
         font-size: 1.5em; } }
 
-.nav-logo {
-  position: fixed;
-  top: 20px;
-  cursor: pointer;
-  left: 2%; }
-  .nav-logo a {
-    font-size: 1.2em;
-    color: #fff; }
-
 #skills {
   margin: 10rem 0;
   background: #4b072a;
@@ -140,6 +135,8 @@ footer {
     border-radius: 2.5rem;
     background-color: #fff;
     padding: 4rem; }
+    #skills .skills--card .dark-mode {
+      background-color: #1e2227; }
     @media (max-width: 600px) {
       #skills .skills--card {
         padding: 2rem; } }
@@ -161,6 +158,8 @@ footer {
   #journal .section-title {
     text-align: center;
     margin-bottom: 2rem; }
+  #journal .dark-mode {
+    background-color: #1e2227; }
 
 .resume {
   background: #43bfe6;
@@ -184,6 +183,27 @@ footer {
     .resume-wrapper a:hover {
       transform: translate(10px); }
 
+.dark-mode {
+  background: #1e2227;
+  color: #fff; }
+  .dark-mode .post-body {
+    background: #1e2227; }
+    .dark-mode .post-body a {
+      color: #fff; }
+  .dark-mode .post-container {
+    background: #1e2227;
+    color: #fff; }
+    .dark-mode .post-container a {
+      color: #fff; }
+  .dark-mode .about-grid .about--desc,
+  .dark-mode #skills .skills--card,
+  .dark-mode #journal {
+    background-color: #1e2227; }
+  .dark-mode .journal-post {
+    background-color: #2d3339; }
+    .dark-mode .journal-post a {
+      color: #fff; }
+
 @font-face {
   font-family: zarya;
   src: url(fonts/graffiti.otf) format("opentype"); }
@@ -197,6 +217,8 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center; }
+    .about-grid .about--desc .dark-mode {
+      background-color: #1e2227; }
   .about-grid img {
     width: 100%;
     height: auto; }
@@ -217,6 +239,23 @@ footer {
   margin: 0 auto 2rem auto;
   display: flex;
   width: 100%; }
+
+.nav-logo {
+  position: fixed;
+  top: 20px;
+  cursor: pointer;
+  left: 2%;
+  display: flex;
+  align-items: center; }
+  .nav-logo a {
+    font-size: 1.2em;
+    color: #fff; }
+  .nav-logo .nite-btn {
+    margin-left: 1rem;
+    color: #fff; }
+    .nav-logo .nite-btn:hover {
+      background-color: transparent;
+      opacity: 0.4; }
 
 .button_container {
   position: fixed;
@@ -388,7 +427,7 @@ span:nth-of-type(3) {
     opacity: 1; }
 
 .post-body {
-  background: #fff !important;
+  background: #fff;
   line-height: 1.8;
   display: grid;
   min-height: 100vh;

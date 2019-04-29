@@ -8,9 +8,14 @@
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
 <script>
   $('#toggle-navvy').click(function() {
    $(this).toggleClass('active');
    $('#overlay').toggleClass('open');
+  });
+
+  $(".nite-btn").on("click", () => {
+    $("body").toggleClass("dark-mode");
   });
 </script>
