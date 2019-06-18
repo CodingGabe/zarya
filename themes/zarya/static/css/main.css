@@ -1,3 +1,4 @@
+/*  linear-gradient(180deg, rgba(125,13,70,0.67) 0%, rgba(250,25,139,0.67) 100%) */
 /* quick reset */
 html,
 body,
@@ -35,7 +36,7 @@ p {
 
 a {
   font-family: futura-pt, sans-serif;
-  color: #000;
+  color: #FA198B;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease-in; }
@@ -59,7 +60,7 @@ footer {
       opacity: 0.4; }
 
 .intro {
-  background: linear-gradient(180deg, rgba(125, 13, 70, 0.67) 0%, rgba(250, 25, 139, 0.67) 100%), url(/img/angel.png) no-repeat center center;
+  background: linear-gradient(180deg, rgba(54, 226, 223, 0.47) 0%, rgba(0, 0, 0, 0.67) 60%), url(/img/angel.png) no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   padding: 4rem 0;
@@ -110,8 +111,8 @@ footer {
 
 #skills {
   margin: 10rem 0;
-  background: #4b072a;
-  background: linear-gradient(90deg, #4b072a 0%, #fa198b 50%);
+  background: #0b4746;
+  background: linear-gradient(90deg, #0b4746 0%, #36e2df 50%);
   transform: skewY(-5deg);
   padding: 6rem 0; }
   #skills .section-title {
@@ -148,7 +149,7 @@ footer {
 .hire {
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-  background-color: #FA198B;
+  background-color: #36E2DF;
   padding: 4em 0;
   text-align: center; }
 
@@ -247,6 +248,8 @@ footer {
   left: 2%;
   display: flex;
   align-items: center; }
+  .nav-logo img#my-logo {
+    max-width: 250px; }
   .nav-logo a {
     font-size: 1.2em;
     color: #fff; }
@@ -300,7 +303,7 @@ span:nth-of-type(3) {
 
 .overlay {
   position: fixed;
-  background: #FA198B;
+  background: #36E2DF;
   top: 0;
   left: 0;
   width: 100%;
@@ -369,7 +372,7 @@ span:nth-of-type(3) {
           width: 0%;
           transform: translateX(-50%);
           height: 3px;
-          background: #FA198B;
+          background: #36E2DF;
           transition: .35s; }
 
 @keyframes fadeInRight {
@@ -483,7 +486,7 @@ span:nth-of-type(3) {
     box-shadow: 0 5px 40px -5px rgba(0, 0, 0, 0.1); }
 
 .journal-hero {
-  background: linear-gradient(180deg, rgba(125, 13, 70, 0.67) 0%, rgba(250, 25, 139, 0.67) 100%), url(/img/brock.jpg) no-repeat center center;
+  background: linear-gradient(180deg, rgba(54, 226, 223, 0.47) 0%, rgba(0, 0, 0, 0.67) 60%), url(/img/brock.jpg) no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -502,7 +505,7 @@ span:nth-of-type(3) {
       font-size: 2.5em; } }
 
 .design-title {
-  color: #000;
+  color: #FA198B;
   font-size: 1.5em; }
 
 .not-available {
@@ -531,7 +534,7 @@ span:nth-of-type(3) {
   text-align: center;
   padding: 1rem 2rem;
   color: #fff;
-  background-color: #FA198B;
+  background-color: #36E2DF;
   text-transform: uppercase;
   text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
   border-radius: 5px;
@@ -547,7 +550,7 @@ span:nth-of-type(3) {
   .zarya-btn:link:hover,
   .zarya-btn:visited:hover {
     transform: translateY(-1px);
-    background-color: #FA198B;
+    background-color: #36E2DF;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
     opacity: 0.95; }
 
@@ -632,7 +635,7 @@ p.post-date {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       padding: 0 2rem; } }
   .zarya-grid .grid-item {
-    background-color: #000;
+    background-color: #FA198B;
     color: #fff;
     border-radius: .5rem; }
     .zarya-grid .grid-item .playlist-desc {
@@ -642,7 +645,7 @@ p.post-date {
       border-radius: .5rem .5rem 0 0; }
 
 .playlist-body {
-  background: linear-gradient(180deg, rgba(125, 13, 70, 0.67) 0%, rgba(250, 25, 139, 0.67) 100%), url(/img/brock.jpg) no-repeat center center;
+  background: linear-gradient(180deg, rgba(54, 226, 223, 0.47) 0%, rgba(0, 0, 0, 0.67) 60%), url(/img/brock.jpg) no-repeat center center;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -654,7 +657,7 @@ p.post-date {
   border-bottom: 1rem solid #CCFF66; }
 
 .pink-bottom {
-  border-bottom: 1rem solid #FA198B; }
+  border-bottom: 1rem solid #36E2DF; }
 
 .blue-bottom {
   border-bottom: 1rem solid #43BFE6; }
