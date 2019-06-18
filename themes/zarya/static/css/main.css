@@ -41,7 +41,7 @@ a {
   font-weight: 600;
   transition: all 0.2s ease-in; }
   a:focus, a:hover {
-    background-color: #43BFE6; }
+    background-color: #1e2227; }
 
 footer {
   text-align: center;
@@ -359,6 +359,8 @@ span:nth-of-type(3) {
         text-transform: uppercase;
         font-size: 10rem;
         transform: skew(0deg, -10deg); }
+        .overlay ul li a:hover {
+          background-color: #FA198B; }
         @media (max-width: 1000px) {
           .overlay ul li a {
             font-size: 5.5rem; } }
