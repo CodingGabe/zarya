@@ -249,7 +249,11 @@ footer {
   display: flex;
   align-items: center; }
   .nav-logo img#my-logo {
+    width: 100%;
     max-width: 250px; }
+    @media (max-width: 600px) {
+      .nav-logo img#my-logo {
+        max-width: 175px; } }
   .nav-logo a {
     font-size: 1.2em;
     color: #fff; }
