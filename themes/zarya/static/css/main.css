@@ -184,6 +184,30 @@ footer {
     .resume-wrapper a:hover {
       transform: translate(10px); }
 
+#partner {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 4rem auto;
+  max-width: 125rem; }
+  @media (max-width: 600px) {
+    #partner {
+      grid-template-columns: 1fr; } }
+  #partner img {
+    width: 100%;
+    max-width: 350px; }
+  #partner .grid-item {
+    display: grid;
+    justify-self: center;
+    align-self: center; }
+    @media (max-width: 600px) {
+      #partner .grid-item {
+        padding: 0 2rem;
+        text-align: center; } }
+  #partner .section-title {
+    font-size: 3rem;
+    padding-bottom: 2rem; }
+
 .dark-mode {
   background: #1e2227;
   color: #fff; }

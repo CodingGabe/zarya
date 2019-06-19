@@ -174,7 +174,29 @@ footer
         transition: all 0.3s ease
         &:hover
             transform: translate(10px)
-    
+// partner 
+#partner
+    display: grid
+    grid-gap: 4rem
+    grid-template-columns: 1fr 1fr
+    margin: 4rem auto
+    max-width: 125rem
+    @media (max-width: 600px)
+        grid-template-columns: 1fr
+    img 
+        width: 100%
+        max-width: 350px
+    .grid-item
+        display: grid
+        justify-self: center
+        align-self: center
+        @media (max-width: 600px)
+            padding: 0 2rem
+            text-align: center
+
+    .section-title
+        font-size: 3rem
+        padding-bottom: 2rem
 
 // Dark Mode Activate
 .dark-mode
