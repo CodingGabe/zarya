@@ -49,6 +49,10 @@ MetaDataFormat = "toml"
     weight = 4
     url = "/playlists/"
 [[menu.main]]
-    name = "About"
+    name = "Work"
     weight = 5
+    url = "/work/"
+[[menu.main]]
+    name = "About"
+    weight = 6
     url = "/about/"
