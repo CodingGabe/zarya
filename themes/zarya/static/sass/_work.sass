@@ -1,15 +1,19 @@
 .projects
     margin: 10rem 0
-    .section-title
-        text-align: center
-    .projects-title
-        font-size: 3rem
-    .projects-subtitle
-        font-size: 2rem
-        margin: 0
-        colro: hsl(330, 96%, 35%)
+    p
+        margin: .5rem 0
 
-    
+.section-title
+    text-align: center
+.projects-title
+    font-size: 3rem
+    margin-bottom: 5px
+
+.projects-subtitle
+    font-size: 2rem
+    margin: 0
+    color: hsl(330, 96%, 35%)
+
 .close
     background: none
     color: $dark
@@ -24,6 +28,7 @@
     grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr))
     grid-auto-rows: 25rem
     grid-auto-flow: dense
+    margin-top: 6rem
 
 .item
     overflow: hidden
@@ -32,6 +37,7 @@
     grid-template-rows: 1
     border-radius: .5rem
     box-shadow: 0 4px 6px rgba(0,0,0,.2), 0 5px 15px rgba(0,0,0,.1)
+
 .item img 
       grid-column: 1 / -1
       grid-row: 1 / -1

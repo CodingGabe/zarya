@@ -220,6 +220,112 @@ footer
         a
             color: $white
 
+
+.projects
+    margin: 10rem 0
+    
+.section-title
+    text-align: center
+.projects-title
+    font-size: 3rem
+.projects-subtitle
+    font-size: 2rem
+    margin: 0
+    colro: hsl(330, 96%, 35%)
+
+.close
+    background: none
+    color: $dark
+    border: 0
+    font-size: 2rem
+    padding-bottom: 2rem
+    font-family: $body-font
+
+.work-grid
+    display: grid
+    grid-gap: 3rem
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr))
+    grid-auto-rows: 25rem
+    grid-auto-flow: dense
+
+.item
+    overflow: hidden
+    display: grid
+    grid-template-columns: 1
+    grid-template-rows: 1
+    border-radius: .5rem
+    box-shadow: 0 4px 6px rgba(0,0,0,.2), 0 5px 15px rgba(0,0,0,.1)
+.item img 
+      grid-column: 1 / -1
+      grid-row: 1 / -1
+      width: 100%
+      height: 100%
+      object-fit: cover
+    
+.item_overlay 
+    background: hsla(0, 0%, 0%, .74)
+    grid-column: 1 / -1
+    grid-row: 1 / -1
+    position: relative
+    display: grid
+    justify-items: center
+    align-items: center
+    transition: 0.2s
+    transform: translateY(100%)
+
+.item_overlay button
+    border: none
+    display: inline-block
+    font-family: futura-pt, sans-serif
+    font-style: italic
+    max-width: 15rem
+    text-align: center
+    padding: 1rem 2rem
+    color: $white
+    background-color: $secondary
+    text-transform: uppercase
+    text-shadow: 0 1px 3px rgba(36,180,126,.4)
+    border-radius: 5px
+    font-weight: 700
+    letter-spacing: 0.1rem
+    font-size: 1.2rem
+    box-shadow: 0 2px 2px rgba(0,0,0,.24)
+    transition: all .2s ease-in-out
+    @media (max-width: 600px)
+        margin: 0 auto
+    &:hover
+        transform: translateY(-1px)
+        background-color: $secondary
+        box-shadow: 0 8px 8px rgba(0,0,0,.16)
+        opacity: 0.95
+
+.item:hover .item_overlay
+    transform: translateY(0)
+
+.overlay-work
+      position: fixed
+      background: rgba(0, 0, 0, 0.7)
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      display: none
+      z-index: 2
+    
+.overlay-work.open 
+    display: grid
+    align-items: center
+    justify-items: center
+
+.overlay-inner--work 
+    background: white
+    width: 700px
+    padding: 20px
+
+.overlay-work 
+    img 
+        width: 100%
+    
 // Custom Font
 @font-face 
     font-family: zarya 
