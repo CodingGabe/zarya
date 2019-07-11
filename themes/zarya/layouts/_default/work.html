@@ -21,7 +21,7 @@
 
 <body class="post-body">
     {{ partial "nav.html" . }}
-    <div class="playlist-body">
+    <div class="container">
             {{.Content}}
     </div>
     {{ partial "footer.html" . }}
@@ -32,11 +32,13 @@
 const gallery = document.querySelector('.work-grid');
 const overlay = document.querySelector('.overlay-work');
 const overlayImage = overlay.querySelector('img');
+const overlayDesc = overlay.querySelector('.desc');
 const overlayClose = overlay.querySelector('.close');
 
 function handleClick(e) {
       const src = e.currentTarget.querySelector('img').src;
       overlayImage.src = src;
+    //   overlayDesc.classList.add('.desc');
       overlay.classList.add('open');
     }
 
