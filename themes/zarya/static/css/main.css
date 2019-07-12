@@ -527,9 +527,12 @@ span:nth-of-type(3) {
   margin: 10rem 0; }
   .projects p {
     margin: .5rem 0; }
+  .projects img {
+    width: 100%; }
 
 .section-title {
-  text-align: center; }
+  text-align: center;
+  line-height: 1.2; }
 
 .projects-title {
   font-size: 3rem;
