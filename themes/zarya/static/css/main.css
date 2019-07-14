@@ -529,6 +529,13 @@ span:nth-of-type(3) {
     margin: .5rem 0; }
   .projects img {
     width: 100%; }
+  .projects a {
+    font-size: 1.6rem;
+    text-decoration: underline; }
+  .projects hr {
+    width: 60%;
+    margin: 4rem auto 6rem auto;
+    opacity: .6; }
 
 .section-title {
   text-align: center;
