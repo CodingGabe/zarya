@@ -36,7 +36,7 @@ p {
 
 a {
   font-family: futura-pt, sans-serif;
-  color: #FA198B;
+  color: #36E2DF;
   text-decoration: none;
   font-weight: 600;
   transition: all 0.2s ease-in; }
@@ -149,7 +149,7 @@ footer {
 .hire {
   -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
-  background-color: #36E2DF;
+  background-color: #FA198B;
   padding: 4em 0;
   text-align: center; }
 
@@ -293,7 +293,7 @@ footer {
   text-align: center;
   padding: 1rem 2rem;
   color: #fff;
-  background-color: #FA198B;
+  background-color: #36E2DF;
   text-transform: uppercase;
   text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
   border-radius: 5px;
@@ -307,7 +307,7 @@ footer {
       margin: 0 auto; } }
   .item_overlay button:hover {
     transform: translateY(-1px);
-    background-color: #FA198B;
+    background-color: #36E2DF;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
     opacity: 0.95; }
 
@@ -441,7 +441,7 @@ span:nth-of-type(3) {
 
 .overlay {
   position: fixed;
-  background: #36E2DF;
+  background: #FA198B;
   top: 0;
   left: 0;
   width: 100%;
@@ -498,7 +498,7 @@ span:nth-of-type(3) {
         font-size: 8rem;
         transform: skew(0deg, -10deg); }
         .overlay ul li a:hover {
-          background-color: #FA198B; }
+          background-color: #36E2DF; }
         @media (max-width: 1000px) {
           .overlay ul li a {
             font-size: 5.5rem; } }
@@ -512,7 +512,7 @@ span:nth-of-type(3) {
           width: 0%;
           transform: translateX(-50%);
           height: 3px;
-          background: #36E2DF;
+          background: #FA198B;
           transition: .35s; }
 
 @keyframes fadeInRight {
@@ -601,7 +601,7 @@ span:nth-of-type(3) {
   text-align: center;
   padding: 1rem 2rem;
   color: #fff;
-  background-color: #FA198B;
+  background-color: #36E2DF;
   text-transform: uppercase;
   text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
   border-radius: 5px;
@@ -615,7 +615,7 @@ span:nth-of-type(3) {
       margin: 0 auto; } }
   .item_overlay button:hover {
     transform: translateY(-1px);
-    background-color: #FA198B;
+    background-color: #36E2DF;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
     opacity: 0.95; }
 
@@ -721,7 +721,7 @@ span:nth-of-type(3) {
       font-size: 2.5em; } }
 
 .design-title {
-  color: #FA198B;
+  color: #36E2DF;
   font-size: 1.5em; }
 
 .not-available {
@@ -750,7 +750,7 @@ span:nth-of-type(3) {
   text-align: center;
   padding: 1rem 2rem;
   color: #fff;
-  background-color: #36E2DF;
+  background-color: #FA198B;
   text-transform: uppercase;
   text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
   border-radius: 5px;
@@ -766,7 +766,7 @@ span:nth-of-type(3) {
   .zarya-btn:link:hover,
   .zarya-btn:visited:hover {
     transform: translateY(-1px);
-    background-color: #36E2DF;
+    background-color: #FA198B;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.16);
     opacity: 0.95; }
 
@@ -851,7 +851,7 @@ p.post-date {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       padding: 0 2rem; } }
   .zarya-grid .grid-item {
-    background-color: #FA198B;
+    background-color: #36E2DF;
     color: #fff;
     border-radius: .5rem; }
     .zarya-grid .grid-item .playlist-desc {
@@ -873,7 +873,7 @@ p.post-date {
   border-bottom: 1rem solid #CCFF66; }
 
 .pink-bottom {
-  border-bottom: 1rem solid #36E2DF; }
+  border-bottom: 1rem solid #FA198B; }
 
 .blue-bottom {
   border-bottom: 1rem solid #43BFE6; }
